@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble gum Travel agency</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .hero-section {
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer {
+      background-color: blue;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Bubble gum Travel Agency</a>
+  </navbrand>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+  <div>
+    <h1>Explore the World with Us</h1>
+    <p>Discover amazing places at exclusive deals</p>
+    <a href="#destinations" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Destinations Section -->
+<section id="destinations" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (1).jpg" class="card-img-top" alt="The South Of France">
+          <div class="card-body">
+            <h5 class="card-title">The South of France</h5>
+            <p class="card-text">Explore the beauty of The South of France.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (4).jpg" class="card-img-top" alt="Greece">
+          <div class="card-body">
+            <h5 class="card-title">Greece</h5>
+            <p class="card-text">Experience the adventure in Greece.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (6).jpg" class="card-img-top" alt="Paris">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">Discover the charm of Paris.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tours Section -->
+<section id="tours" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Tour Packages</h2>
+    <div class="accordion" id="tourAccordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Tour Package 1
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#tourAccordion">
+          <div class="card-body">
+            Discover the highlights of Tour Package 1. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tour Package 2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#tourAccordion">
+          <div class="card-body">
+            Experience the wonders of Tour Package 2. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Tour Package 3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#tourAccordion">
+          <div class="card-body">
+            Enjoy the beauty of Tour Package 3. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputDestination">Destination of Interest</label>
+        <input type="text" class="form-control" id="inputDestination" placeholder="Destination of Interest">
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Message</label>
+        <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    <div>
+      <a href="#"><img src="download (7).jpg" alt="Facebook" width="24" height="24"></a>
+      <a href="#"><img src="download (9).jpg" alt="Twitter" width="24" height="24"></a>
+      <a href="#"><img src="download (8).jpg" alt="Instagram" width="24" height="24"></a>
+    </div>
+  </div
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
